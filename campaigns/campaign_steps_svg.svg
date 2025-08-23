@@ -1,0 +1,101 @@
+<svg viewBox="0 50 842 220" xmlns="http://www.w3.org/2000/svg" style="background: transparent;">
+  <defs>
+    <!-- Gradient for the wavy line -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B7FD4;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#A395E8;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8B7FD4;stop-opacity:0.8"/>
+    </linearGradient>
+    
+    <!-- Circle gradient -->
+    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#B8ACFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8B7FD4;stop-opacity:1"/>
+    </radialGradient>
+    
+    <!-- Animation for the wavy line -->
+    <animateTransform id="waveAnim" attributeName="transform" type="translate" 
+                      values="0,0; 2,0; 0,0; -2,0; 0,0" dur="4s" repeatCount="indefinite"/>
+  </defs>
+  
+  <!-- Background wavy line connecting all steps -->
+  <path d="M 100 120 Q 180 100, 260 120 Q 340 140, 420 120 Q 500 100, 580 120 Q 660 140, 740 120" 
+        stroke="url(#lineGradient)" stroke-width="3" fill="none" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0; 6,4; 3,8; -2,6; -6,-2; -4,-8; 2,-6; 5,2; 0,0" dur="8s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Step 1: Register Your Profile -->
+  <g>
+    <circle cx="100" cy="120" r="20" fill="url(#circleGradient)" stroke="#fff" stroke-width="2">
+      <animate attributeName="r" values="20;22;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="100" y="127" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1</text>
+    <text x="100" y="170" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Register Your</text>
+    <text x="100" y="185" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Profile</text>
+    <text x="100" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Sign up and choose</text>
+    <text x="100" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">your account type</text>
+  </g>
+  
+  <!-- Step 2: Choose a Campaign Category -->
+  <g>
+    <circle cx="260" cy="120" r="20" fill="url(#circleGradient)" stroke="#fff" stroke-width="2">
+      <animate attributeName="r" values="20;22;20" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="260" y="127" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">2</text>
+    <text x="260" y="170" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Choose a Campaign</text>
+    <text x="260" y="185" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Category</text>
+    <text x="260" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Match your cause to</text>
+    <text x="260" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">the right type</text>
+  </g>
+  
+  <!-- Step 3: Submit Required Information -->
+  <g>
+    <circle cx="420" cy="120" r="20" fill="url(#circleGradient)" stroke="#fff" stroke-width="2">
+      <animate attributeName="r" values="20;22;20" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="420" y="127" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">3</text>
+    <text x="420" y="170" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Submit Required</text>
+    <text x="420" y="185" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Information</text>
+    <text x="420" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Describe your goal</text>
+    <text x="420" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">and verify your need</text>
+  </g>
+  
+  <!-- Step 4: Undergo Review -->
+  <g>
+    <circle cx="580" cy="120" r="20" fill="url(#circleGradient)" stroke="#fff" stroke-width="2">
+      <animate attributeName="r" values="20;22;20" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="580" y="127" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">4</text>
+    <text x="580" y="170" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Undergo</text>
+    <text x="580" y="185" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Review</text>
+    <text x="580" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Every campaign is</text>
+    <text x="580" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">checked before live</text>
+  </g>
+  
+  <!-- Step 5: Get Approved & Go Live -->
+  <g>
+    <circle cx="740" cy="120" r="20" fill="url(#circleGradient)" stroke="#fff" stroke-width="2">
+      <animate attributeName="r" values="20;22;20" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="740" y="127" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">5</text>
+    <text x="740" y="170" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Get Approved</text>
+    <text x="740" y="185" text-anchor="middle" fill="url(#circleGradient)" font-family="Arial, sans-serif" font-size="12" font-weight="bold">&amp; Go Live</text>
+    <text x="740" y="205" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Start receiving</text>
+    <text x="740" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">global support</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="180" cy="80" r="2" fill="#D4C9FF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="90" r="1.5" fill="#D4C9FF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="520" cy="85" r="2" fill="#D4C9FF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="75" r="1.5" fill="#D4C9FF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

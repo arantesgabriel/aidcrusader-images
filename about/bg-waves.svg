@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definições dos gradientes e padrões -->
+  <defs>
+    <!-- Gradiente vertical principal -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2B388F;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#2C3A8D;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#3546A9;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Gradiente para as ondas -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3546A9;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#3D52C5;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <!-- Padrão de ondas menores -->
+    <pattern id="wavePattern" x="0" y="0" width="200" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0,50 Q50,20 100,50 T200,50" stroke="#3D52C5" stroke-width="2" fill="none" opacity="0.4"/>
+      <path d="M0,70 Q50,40 100,70 T200,70" stroke="#465DE1" stroke-width="1.5" fill="none" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background base com gradiente -->
+  <rect width="100%" height="100%" fill="url(#mainGradient)"/>
+  
+  <!-- Camada de padrão de ondas -->
+  <rect width="100%" height="100%" fill="url(#wavePattern)" opacity="0.5"/>
+  
+  <!-- Ondas grandes na parte inferior -->
+  <path d="M0,600 Q300,500 600,600 T1200,600 L1200,800 L0,800 Z" 
+        fill="url(#waveGradient)" opacity="0.7"/>
+  
+  <path d="M0,650 Q200,580 400,650 Q600,720 800,650 Q1000,580 1200,650 L1200,800 L0,800 Z" 
+        fill="#465DE1" opacity="0.5"/>
+  
+  <path d="M0,700 Q150,640 300,700 Q450,760 600,700 Q750,640 900,700 Q1050,760 1200,700 L1200,800 L0,800 Z" 
+        fill="#3D52C5" opacity="0.4"/>
+  
+  <!-- Ondas sutis no topo -->
+  <path d="M0,80 Q300,60 600,80 T1200,80 L1200,160 Q900,140 600,160 Q300,180 0,160 Z" 
+        fill="#2C3A8D" opacity="0.15"/>
+  
+  <!-- Ondas médias no meio -->
+  <path d="M0,350 Q400,300 800,350 Q1000,370 1200,350 L1200,450 Q800,400 400,450 Q200,470 0,450 Z" 
+        fill="#3546A9" opacity="0.25"/>
+  
+  <!-- Detalhes decorativos -->
+  <circle cx="150" cy="150" r="3" fill="#3D52C5" opacity="0.6"/>
+  <circle cx="250" cy="200" r="2" fill="#465DE1" opacity="0.5"/>
+  <circle cx="350" cy="120" r="4" fill="#3546A9" opacity="0.4"/>
+  <circle cx="900" cy="300" r="3" fill="#465DE1" opacity="0.7"/>
+  <circle cx="1050" cy="250" r="2" fill="#3D52C5" opacity="0.6"/>
+  
+  <!-- Linhas onduladas decorativas -->
+  <path d="M50,300 Q150,280 250,300 Q350,320 450,300" 
+        stroke="#3D52C5" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M700,200 Q800,180 900,200 Q1000,220 1100,200" 
+        stroke="#3546A9" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
